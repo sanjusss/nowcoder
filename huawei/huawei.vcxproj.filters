@@ -59,5 +59,8 @@
     <ClInclude Include="013查找兄弟单词.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="014单词倒排.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
