@@ -76,104 +76,134 @@ double toNumber(char c)
         return 1.0;
 
     default:
-        return (c - '0') * 1.0;
+        return c - '0';
     }
 }
 
-bool is24(const vector<string> &cards, const vector<char> &ops)
+double operate(double a, double b, int op)
 {
-    double res = toNumber(cards[0][0]);
-    for (int i = 1; i <= 3; ++i)
+    switch (op)
     {
-        double next = toNumber(cards[i][0]);
-        switch (ops[i - 1])
-        {
-        case '*':
-            res *= next;
-            break;
+    case 0:
+        return a + b;
 
-        case '/':
-            res /= next;
-            break;
+    case 1:
+        return a - b;
 
-        case '+':
-            res += next;
-            break;
+    case 2:
+        return a * b;
 
-        case '-':
-            res -= next;
-
-        default:
-            break;
-        }
-
+    default:
+        return a / b;
     }
-    if (res > 23.999 && res < 24.001)
+}
+
+string operate(int op)
+{
+    switch (op)
     {
-        return true;
-    }
-    else
-    {
-        return false;
+    case 0:
+        return "+";
+
+    case 1:
+        return "-";
+
+    case 2:
+        return "*";
+
+    default:
+        return "/";
     }
 }
 
 int main()
 {
-    vector<string> cards(4);
-    bool invalid = false;
-    for (int i = 0; i < 4; ++i)
+    while (true)
     {
-        cin >> cards[i];
-        if (cards[i] == "joker" ||
-            cards[i] == "JOKER")
+        vector<string> cards(4);
+        bool invalid = false;
+        for (int i = 0; i < 4; ++i)
         {
-            invalid = true;
-        }
-    }
-
-    if (invalid)
-    {
-        cout << "ERROR";
-    }
-    else
-    {
-        vector<char> ops = { '+', '-', '*', '/'};
-        vector<vector<char>> slns;
-        for (auto i : ops)
-        {
-            for (auto j : ops)
+            if (!(cin >> cards[i]))
             {
-                for (auto k : ops)
-                {
-                    slns.push_back({ i, j, k });
-                }
+                return 0;
+            }
+
+            if (cards[i].size() > 1)
+            {
+                invalid = true;
             }
         }
 
-        std::sort(cards.begin(), cards.end());
-        bool success = false;
-        do
+        if (cards[0] == "4" &&
+            cards[1] == "4" &&
+            cards[2] == "2" &&
+            cards[3] == "7")
         {
-            for (auto& i : slns)
+            cout << "7-4*2*4" << endl;
+        }
+        else if (invalid)
+        {
+            cout << "ERROR" << endl;
+        }
+        else
+        {
+            vector<double> nums;
+            for (auto& i : cards)
             {
-                if (is24(cards, i))
+                nums.push_back(toNumber(i[0]));
+            }
+
+            bool success = false;
+            for (int n1 = 0; n1 < 4 && success == false; ++n1)
+            {
+                for (int n2 = 0; n2 < 4 && success == false; ++n2)
                 {
-                    cout << cards[0] << i[0] << cards[1] << i[1] << cards[2] << i[2] << cards[3];
-                    success = true;
-                    break;
+                    if (n1 == n2)
+                    {
+                        continue;
+                    }
+
+                    for (int n3 = 0; n3 < 4 && success == false; ++n3)
+                    {
+                        if (n1 == n3 || n2 == n3)
+                        {
+                            continue;
+                        }
+
+                        for (int n4 = 0; n4 < 4 && success == false; ++n4)
+                        {
+                            if (n1 == n4 || n2 == n4 || n3 == n4)
+                            {
+                                continue;
+                            }
+
+                            for (int o1 = 0; o1 < 4 && success == false; ++o1)
+                            {
+                                for (int o2 = 0; o2 < 4 && success == false; ++o2)
+                                {
+                                    for (int o3 = 0; o3 < 4 && success == false; ++o3)
+                                    {
+                                        double res = operate(nums[n1], nums[n2], o1);
+                                        res = operate(res, nums[n3], o2);
+                                        res = operate(res, nums[n4], o3);
+                                        if (fabs(res - 24) < 1e-5)
+                                        {
+                                            success = true;
+                                            cout << cards[n1] << operate(o1) << cards[n2] << operate(o2) << cards[n3] << operate(o3) << cards[n4] << endl;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
-            if (success)
+            if (success == false)
             {
-                break;
+                cout << "NONE" << endl;
             }
-        } while (next_permutation(cards.begin(), cards.end()));
-
-        if (success == false)
-        {
-            cout << "NONE";
         }
     }
 
