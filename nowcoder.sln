@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "huawei2016", "huawei2016\hu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "common\common.vcxitems", "{2D062B67-C422-48FF-ACB6-0793F240634C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "huawei", "huawei\huawei.vcxproj", "{D8D8F095-5CD9-465B-8941-24DE16019814}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		common\common.vcxitems*{2d062b67-c422-48ff-acb6-0793f240634c}*SharedItemsImports = 9
@@ -27,6 +29,14 @@ Global
 		{3D1A003E-EA10-4F54-B453-4126B4A0C3F6}.Release|x64.Build.0 = Release|x64
 		{3D1A003E-EA10-4F54-B453-4126B4A0C3F6}.Release|x86.ActiveCfg = Release|Win32
 		{3D1A003E-EA10-4F54-B453-4126B4A0C3F6}.Release|x86.Build.0 = Release|Win32
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Debug|x64.ActiveCfg = Debug|x64
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Debug|x64.Build.0 = Debug|x64
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Debug|x86.Build.0 = Debug|Win32
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Release|x64.ActiveCfg = Release|x64
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Release|x64.Build.0 = Release|x64
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Release|x86.ActiveCfg = Release|Win32
+		{D8D8F095-5CD9-465B-8941-24DE16019814}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
