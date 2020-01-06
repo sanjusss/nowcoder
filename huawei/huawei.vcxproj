@@ -165,6 +165,7 @@
     <ClInclude Include="013查找兄弟单词.hpp" />
     <ClInclude Include="014单词倒排.hpp" />
     <ClInclude Include="015简单错误记录.hpp" />
+    <ClInclude Include="016数字颠倒.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
