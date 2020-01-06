@@ -68,5 +68,8 @@
     <ClInclude Include="016数字颠倒.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="017字符串反转.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
