@@ -24,5 +24,4 @@
 #pragma warning(disable:6100)
 #pragma warning(disable:26495)
 
-
 using namespace std;

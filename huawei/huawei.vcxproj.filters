@@ -53,5 +53,8 @@
     <ClInclude Include="011_24点运算.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="012数独.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -161,6 +161,7 @@
     <ClInclude Include="009提取不重复的整数.hpp" />
     <ClInclude Include="010字符个数统计.hpp" />
     <ClInclude Include="011_24点运算.hpp" />
+    <ClInclude Include="012数独.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
