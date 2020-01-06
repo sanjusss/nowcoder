@@ -167,6 +167,7 @@
     <ClInclude Include="015简单错误记录.hpp" />
     <ClInclude Include="016数字颠倒.hpp" />
     <ClInclude Include="017字符串反转.hpp" />
+    <ClInclude Include="018求小球落地5次后所经历的路程和第5次反弹的高度.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
