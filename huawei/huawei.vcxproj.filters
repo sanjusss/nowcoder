@@ -74,5 +74,8 @@
     <ClInclude Include="018求小球落地5次后所经历的路程和第5次反弹的高度.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="019数据分类处理.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
