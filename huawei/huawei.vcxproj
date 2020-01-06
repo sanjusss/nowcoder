@@ -162,6 +162,7 @@
     <ClInclude Include="010字符个数统计.hpp" />
     <ClInclude Include="011_24点运算.hpp" />
     <ClInclude Include="012数独.hpp" />
+    <ClInclude Include="013查找兄弟单词.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
