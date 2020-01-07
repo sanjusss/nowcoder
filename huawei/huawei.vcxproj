@@ -171,6 +171,7 @@
     <ClInclude Include="019数据分类处理.hpp" />
     <ClInclude Include="020记负均正.hpp" />
     <ClInclude Include="021识别有效的IP地址和掩码并进行分类统计.hpp" />
+    <ClInclude Include="022坐标移动.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
