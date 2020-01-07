@@ -15,6 +15,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)newcoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)prime.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)stringconvert.hpp" />
   </ItemGroup>
 </Project>
