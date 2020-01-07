@@ -92,5 +92,8 @@
     <ClInclude Include="024购物单.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="025短作业优先.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
