@@ -77,5 +77,8 @@
     <ClInclude Include="019数据分类处理.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="020记负均正.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

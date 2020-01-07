@@ -169,6 +169,7 @@
     <ClInclude Include="017字符串反转.hpp" />
     <ClInclude Include="018求小球落地5次后所经历的路程和第5次反弹的高度.hpp" />
     <ClInclude Include="019数据分类处理.hpp" />
+    <ClInclude Include="020记负均正.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
