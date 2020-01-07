@@ -89,5 +89,8 @@
     <ClInclude Include="023素数伴侣.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="024购物单.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
