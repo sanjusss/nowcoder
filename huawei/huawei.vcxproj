@@ -176,6 +176,7 @@
     <ClInclude Include="024购物单.hpp" />
     <ClInclude Include="025短作业优先.hpp" />
     <ClInclude Include="026字符串中找出连续最长的数字串.hpp" />
+    <ClInclude Include="027免单统计.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
